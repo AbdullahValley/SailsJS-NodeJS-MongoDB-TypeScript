@@ -6,7 +6,7 @@ module.exports = {
     discount: { type: 'string', required: true },
     usageLeft: { type: 'number' },
     cl:{
-      collection:'client'
+      model:'client'
     }
   },
 };

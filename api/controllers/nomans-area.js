@@ -21,8 +21,8 @@ module.exports = {
 
     let coupon = await Coupon.create({type: 'percentage', discount : '50', usageLeft : 100, }).fetch();
 
-    let testRun = await Client.addToCollection(client.id, 'cp')
-      .members([coupon.id]);
+    let testRun = await Coupon.addToCollection(client.id, 'cls')
+      .members([client.id]);
 
     // let users = await Client.find().populate('coupon');
 

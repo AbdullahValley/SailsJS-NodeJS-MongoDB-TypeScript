@@ -5,8 +5,5 @@ module.exports = {
     email: { type: 'string', required: true },
     password: { type: 'string', required: true },
     validated: { type: 'boolean' },
-    cp:{
-      collection:'coupon'
-    }
   },
 };
